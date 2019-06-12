@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="276dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="56dp"
+        android:text=""
+        android:inputType="phone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="267dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="84dp"
+        android:text="I'm going to call this number:"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/state_info"
+        android:layout_width="285dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="103dp"
+        android:text="please fill the fields above"
+        app:layout_constraintTop_toBottomOf="@+id/msg"
+        tools:layout_editor_absoluteX="70dp" />
+
+</android.support.constraint.ConstraintLayout>
