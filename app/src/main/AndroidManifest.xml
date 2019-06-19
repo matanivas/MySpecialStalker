@@ -20,6 +20,16 @@
                 <action android:name="Intent.ACTION_NEW_OUTGOING_CALL" />
             </intent-filter>
         </receiver>
+        <receiver android:name=".SMSHandler">
+            <intent-filter>
+                <action android:name="sent" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SMSReceived">
+            <intent-filter>
+                <action android:name="received" />
+            </intent-filter>
+        </receiver>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
